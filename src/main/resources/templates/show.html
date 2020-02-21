@@ -7,11 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Simonetta&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9c2c348e64.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" th:href="@{css/main.css}">
+    <link rel="stylesheet" th:href="@{../css/main.css}">
 </head>
 <body style="background-color:blanchedalmond">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><span>JungleJim</span></a>
+    <a class="navbar-brand" href="#"><span style="font-family: Trade Winds, sans-serif; color:chocolate; font-size: 1.5em;">JungleJim</span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,9 +26,9 @@
     </div>
 </nav>
 
-<div class="container">
+<div id="work-pls" class="container">
 <a href="/">Show All Jobs</a><br />
-<a href="/add">Add a Job</a><br />
+<a href="/add" class="btn btn-primary btn-sm">Add a Job</a><br />
   Title  :<span th:text="${job.title}" ></span><br />
   Description  :<p th:text="${job.description}" ></p>
   Posted date :<span th:text="${job.postedDate}" ></span><br />
@@ -36,6 +36,14 @@
   Phone :<span th:text="${job.phone}" ></span><br />
   <a th:href="@{/delete/{id}(id=${job.id})}">Delete this job</a>
 </div>
+<style>
+    #work-pls {
+        font-weight: bold;
+    }
+
+
+</style>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -46,6 +54,6 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-<footer>JungleJim&copy;</footer>
+<footer style="position: absolute; bottom: 0; background-color: chocolate; width: 100%;">JungleJim&copy;</footer>
 </body>
 </html>
