@@ -51,17 +51,11 @@
         <td th:text="${job.phone}"></td>
         <td>
             <a th:href="@{/update/{id}(id=${job.id})}">Update</a>
-            <a th:href="@{/detail/{id}(id=${job.id})}">Details</a>
+            <a th:href="@{/detail/{id}(id=${job.id})}" target="_blank">Details</a>
             <a th:href="@{/delete/{id}(id=${job.id})}">Delete</a>
         </td>
     </tr>
 </table>
-
-
-<!--<div th:each="job : ${jobs}">-->
-<!--    <h4 th:inline="text">[[${job.title}]] @ [[${job.description}]]</h4>-->
-<!--    <p th:text="${job.postedDate}"></p>-->
-<!--</div>-->
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

@@ -14,3 +14,13 @@ delete
 
 a. list of jobs with whatever variable
 chosen 
+
+**Not all phone numbers work**
+@Min
+@Max
+How about 10 digits?
+
+**View entry in new page?**
+
+Object -> populate a target="_blank"??
+form action="target" _target?

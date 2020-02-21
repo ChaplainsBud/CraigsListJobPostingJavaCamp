@@ -37,6 +37,7 @@
 </nav>
 
 <h1>Job Form</h1>
+<a href="/add">Add a Job</a><br />
 <form action="#" th:action="@{/process}" th:object="${job}" method="post">
     <input type="hidden" th:field="*{id}" />
     Title :<input type="text" th:field="*{title}">
